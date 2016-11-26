@@ -1,0 +1,1 @@
+([-e tests] && echo tests yes|| echo tests no ) && ([-e testes] && echo testes yes|| echo testes no )

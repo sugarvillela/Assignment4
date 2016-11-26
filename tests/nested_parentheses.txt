@@ -1,0 +1,1 @@
+(test -e tests && echo exists &&(test -e asdf && echo exists) && test ./tests/single_commmand.txt -f) && exit) || exit

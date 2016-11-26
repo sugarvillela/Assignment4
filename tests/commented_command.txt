@@ -1,0 +1,2 @@
+echo cmd1; cmd2# This is a comment!
+exit;
