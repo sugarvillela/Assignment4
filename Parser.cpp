@@ -63,12 +63,9 @@ bool Parser::cmdIsTest1( string &in, vector< string > &t1 ){
 bool Parser::cmdIsTest2( string &in, vector< string > &t1 ){
 	/* Tokenizes string to vector and checks for keyword 'test' */
 	UT::tok( ' ', '"', '"', in, t1 );
-	int n=t1.size();
-	for( int i = 0; i<n; i++ ){
-		if( t1.at( i ) == "test" ){
-			t1.erase( t1.begin() + i );
-			return true;
-		}
+	if( t1.size() && t1.at( 0 ) == "test" ){
+		t1.erase( t1.begin() );
+		return true;
 	}
 	return false;
 }
